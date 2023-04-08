@@ -1,0 +1,239 @@
+.title  {
+	text-align: center;
+	font-family: sans;
+	padding-top: 6px;
+}
+.section {
+	display: table;
+	padding-top: 10px;
+	padding-bottom: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	text-align: center;
+	text-decoration: none;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #03024a;
+    background-color: #a0d2f393;
+}
+p {
+	padding: 28px;
+	margin: 14px;
+}
+.images {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	text-decoration: none;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	padding-top: 8px;
+    color: #040032;
+}
+/*.indeximgs {
+	clip: rect(5px, 5px, 5px, 5px);
+	transition: clip 0.5s;
+}
+.indeximgs:hover {
+	clip: rect(0px, auto, auto, 0px);
+	transition: clip 0.5s;
+}
+*/
+h1 {
+	margin: 2px;
+	padding: 2px;
+    text-align: center;
+	color: #8925ed;
+}
+h3 {
+	text-align: center;
+	color: #1222f8;
+}
+body {
+	margin: 15px;
+	padding: 30px;
+	font-family: sans;
+	/*background-color: #21aafac3;*/
+	background-image: url(../images/zen_1920.jpg);
+	color:#509df6;
+	outline: none;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+#nav {
+	padding-left: 3%;
+}
+a.button {
+	display: inline-block;
+	border: 3px dashed #013b88d7;
+	padding: 4px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	margin: 14px;
+	color: #749af3b0;
+	background-color:#041f41;
+	width: 100px;
+	transition: all 0.4s;
+	position: relative;
+	overflow: hidden;
+	line-height: 25px;
+}
+a.button:visited {
+	text-decoration: none;
+	color: #041f41;
+	background-color: #749af3b0;
+}
+a.button:hover {
+	background-color: #0474fcaf;
+	color:#190138;
+	border: 4px dashed;
+	border-color: #02185b;
+	padding-left: 8px;
+	width: 162px;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	font-size: 1.2em;
+	text-shadow: 0px 2px 2px rgba(155, 213, 244, 0.6);
+}
+a.button:active {
+	background-color: #1d0242;
+	color:#205bfe;
+	border: 3px dotted;
+	border-color: #96c4f2;
+	padding-left: 10px;
+	width: 150px;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	font-size: 1.5em;
+	text-shadow: 0px 2px 1px rgba(155, 213, 244, 0.4);
+}
+a.button::after {
+	content: '';
+	display: block;
+	width: 45px;
+	height: 2px;
+	background-color: #022663;
+	opacity: 0.6;
+	position: relative; top: 0px; left: -10px;
+	transition: left 0.5s ease-in-out;
+	}
+a.button:hover::after { 
+	left: 0px;
+}
+#relievers {
+	color:#420146;
+	text-align: left;
+	padding: 3rem;
+	margin: 1rem;
+	font-size: x-large;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#submitbtn {
+	color: #036510e9;
+	background-color: #d8f9d4b6;
+	border: #033c02 dotted 2px;
+	text-align: center;
+	font-size: x-large;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	cursor: pointer;
+}
+#Clearform {
+	color: #a21603;
+	background-color: #f8f6f28f;
+	border: #6c0202 solid 1px;
+	text-align: center;
+	font-size: medium;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	cursor: pointer;
+}
+footer a {
+	cursor: pointer;
+}
+.container {
+	display: grid;
+	width: 80%;
+	grid-template-rows: repeat(4, 100px);
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap:.5em;
+	grid-auto-flow: row dense;
+}
+.pic01 {
+	justify-self: center;
+	align-self: center;
+}
+.pic02 {
+justify-self: center;
+align-self: center;
+}
+.pic03 {
+	justify-self: center;
+	align-self: center;
+}
+.pic04 {
+	justify-self: center;
+	align-self: center;
+}
+.caption {
+	background-color: #bf96f990;
+}
+
+@media only screen and (min-width: 0px) and (max-width:600px) {
+	.color-item {
+		width: 80%;
+		display: flexbox;
+	}
+	#popularwork-container {
+		width: 80%;
+		display: flexbox;
+	}
+}
+
+@media only screen and (min-width: 599px) and (max-width: 767px) {
+	.color-item {
+		width: 80%;
+		display: flexbox;
+	}
+	#popularwork-container {
+		width: 80%;
+		display: flexbox;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px) {
+	.color-item {
+		width: 80%;
+		display: flexbox;
+		/*flex-direction: row;*/
+	}
+	#popularwork-container {
+		width: 80%;
+		display: flexbox;
+		flex-direction: row;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+	.color-item {
+		width: 80%;
+		display: flexbox;
+		flex-direction: row;
+	}
+	#popularwork-container {
+		width: 80%;
+		display: flexbox;
+		flex-direction: row;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.color-item {
+		width: 80%;
+		display: flexbox;
+		flex-direction: row;
+	}
+	#popularwork-container {
+		width: 80%;
+		display: flexbox;
+		flex-direction: row;
+	}
+}
